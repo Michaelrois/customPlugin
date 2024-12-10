@@ -12,7 +12,7 @@ Text Domain:  custom_plugin
 
 // Define the plugin's absolute path, for use in INCLUDE and REQUIRE functions
 if ( ! defined( 'CUSTOM_PLUGIN_ABSPATH' ) ) 
-{ define( 'CUSTOM_PLUGIN_ABSPATH', dirname( __FILE__ ).'/' );}
+{ define( 'CUSTOM_PLUGIN_ABSPATH', plugin_dir_path( __FILE__ ) );}
 
 // Define the prefix for the plugin's options - Shared across all custom plugin
 if ( ! defined( 'CUST_PREFIX' ) )
